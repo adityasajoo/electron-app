@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI</title>
+    <script src="./linkers/client-link.js"></script>
+</head>    
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btns{
+        display: flex;
+        flex-direction:column ;
+    }
+
+    .btn{
+        margin: 40px;
+        font-size: large;
+        padding: 10px;
+    }
+</style>
+<body>
+
+  <div class="container">
+    <div class="btns">
+        <Button class="btn" value="button 1" onclick="handleClick(this.value)">Raspberry 1</Button>
+        <Button class="btn" value="button 2" onclick="handleClick(this.value)">Raspberry 2</Button>
+        <input type="hidden" name="btn-val" value="" id="val">
+    <p style="margin: 40px;" id="p"></p>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
